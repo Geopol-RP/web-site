@@ -61,6 +61,10 @@ body {
     font-weight: 600;
 }
 
+.button1, .button2 {
+    margin-right: 10px;
+}
+
 .disabled-button {
     cursor: not-allowed;
 }
@@ -69,7 +73,7 @@ body {
     filter: blur(1.5px);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .content h1 {
         margin-top: 70px;
         font-size: 4em;
@@ -81,5 +85,13 @@ body {
         margin-right: auto;
         margin-bottom: 50px;
         font-size: 1.3em;
+    }
+
+    .button1, .button2 {
+        margin-right: 0;
+    }
+
+    .button3 {
+        margin-bottom: 20px;
     }
 }

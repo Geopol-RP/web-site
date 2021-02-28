@@ -58,6 +58,7 @@ body {
     color: beige;
     text-decoration: none;
     border: 2px solid #fff;
+    font-weight: 600;
 }
 
 .disabled-button {

@@ -60,6 +60,7 @@
         </form>
         <p id="copy">Géopol-RP &copy <?= date("Y") ?></p>
     </div>
+    <a href="../" class="returnHomePage"><i class="fas fa-undo-alt"></i> Retourner à la page d'accueil</a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -74,5 +75,6 @@
         });
     });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
 </body>
 </html>

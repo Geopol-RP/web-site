@@ -65,10 +65,23 @@ input[type=submit] {
     background-position: center;
 }
 
+.returnHomePage {
+    position: absolute;
+    top: 98%;
+    left: 5px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #432818;
+}
+
 @media screen and (max-width: 800px) {
-    .container-login {
-        width: 300px;
-        height: 335px;
+    #title-login {
+        margin-bottom: 10px;
+    }
+
+    #label-checkbox {
+        font-size: 0.8em;
     }
 
     form {
@@ -76,16 +89,17 @@ input[type=submit] {
         width: 150px;
     }
 
-    #title-login {
-        margin-bottom: 10px;
-    }
-
     input[type=submit] {
         padding: 10px 15px;
         margin-bottom: -20px;
     }
 
-    #label-checkbox {
-        font-size: 0.8em;
+    .container-login {
+        width: 300px;
+        height: 335px;
+    }
+
+    .returnHomePage {
+        top: 97%;
     }
 }

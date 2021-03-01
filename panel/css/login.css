@@ -29,7 +29,6 @@ input[type=text], input[type=password] {
 
 input[type=submit] {
     background-color: #f1d1b7;
-    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: 2px solid #432818;
@@ -64,4 +63,33 @@ input[type=submit] {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (max-width: 800px) {
+    .container-login {
+        width: 300px;
+        height: 335px;
+    }
+
+    form {
+        margin-top: -10px;
+        width: 150px;
+    }
+
+    #title-login {
+        margin-bottom: 10px;
+    }
+
+    input[type=text], input[type=password] {
+        padding: 5px 10px;
+    }
+
+    input[type=submit] {
+        padding: 10px 15px;
+        margin-bottom: -20px;
+    }
+
+    #label-checkbox {
+        font-size: 0.8em;
+    }
 }

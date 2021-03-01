@@ -20,7 +20,7 @@
                 <br>
                 <input type="password" placeholder="Entrer votre mot de passe" name="password" id="password" required>
                 <br>
-                <label for="checkbox">
+                <label for="checkbox" id="label-checkbox">
                     <input type="checkbox" id="checkbox">
                     Afficher le mot de passe
                 </label>

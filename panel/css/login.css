@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body {
+    margin:0;padding:0;
+    background-color: #ffe6a7;
+    font-family: 'Akaya Telivigala', sans-serif;
+    user-select: none;
+    color: #432818;
+}
+
+form {
+    margin: 0 auto;
+    width: 235px;
+}
+
+input[type=text], input[type=password] {
+    cursor: text;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #432818;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f1d1b7;
+    color: #432818;
+    font-weight: 600;
+}
+
+input[type=submit] {
+    background-color: #f1d1b7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid #432818;
+    color: #432818;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#title-login {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+#copy {
+    text-align: center;
+}
+
+.container-login {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 450px;
+    height: 503px;
+    background-image: url("../img/login_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -15,6 +15,7 @@
 
     <meta name="description" content="Panel publique du site web de Géopol-RP | Géopol-RP c'est une communauté Discord de passionnés de géopolitique. Au cours de parties variées, notre communauté peut s'affronter entre grandes puissances de leur temps en menant des complots, des guerres et des affrontements diplomatiques où seul le plus déterminé peut l'emporter !" />
     <meta name="author" content="Dany.01000110#3355 & Memel#9785" />
+    <meta name="keywords" content="Geopol, Geopol-RP, geopol, geopol rp, Geopol RP, Geopol Rp politique, géopolitique, geopolitique, rp, rôleplay, Rôle-Play, Discord, discord, serveur discord, Serveur Discord, server discord, Server Discord, server, Serveur">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.geopol-rp.fr/panel" />
     <meta property="og:title" content="Géopol-RP - Panel publique" />

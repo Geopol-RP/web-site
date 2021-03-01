@@ -1,3 +1,40 @@
+<?php
+    if(isset($_GET['loginAction'])){
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        if (isset($_POST['username']) && isset($_POST['password'])) {
+            //Connexion à la base de données
+            include 'mysql.php';
+        
+            //Nous allons demander le hash pour cet utilisateur à notre base de données :
+            $query = $pdo->prepare('SELECT * FROM `bdd_Intra` WHERE `users` = ?');
+            $query->execute([$_POST["username"]]);
+            $result = $query->fetch();
+        
+            if (is_array($result) && !empty($result)) {
+                //Nous vérifions si le mot de passe utilisé correspond bien à ce hash à l'aide de password_verify :
+                if (password_verify($_POST["password"], ($result["password"]))) {
+                    //Si oui nous accueillons l'utilisateur identifié
+                    $_SESSION["auth"] = $result;
+                    header('Location: index');
+                    exit();
+                } else {
+                    //Sinon nous signalons une erreur d'identifiant ou de mot de passe
+                    header('Location: login?erreur=1');
+                    exit();
+                }
+            } else {
+                header('Location: login?erreur=1');
+                exit();
+            }
+        } else {
+           header('Location: index.php');
+           exit();
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

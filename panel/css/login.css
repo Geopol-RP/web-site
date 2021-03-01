@@ -80,10 +80,6 @@ input[type=submit] {
         margin-bottom: 10px;
     }
 
-    input[type=text], input[type=password] {
-        padding: 5px 10px;
-    }
-
     input[type=submit] {
         padding: 10px 15px;
         margin-bottom: -20px;
